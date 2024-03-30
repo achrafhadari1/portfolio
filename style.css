@@ -1,0 +1,196 @@
+@font-face {
+  font-family: "Articulate";
+  src: url("font/Fontspring-DEMO-articulatcf-demibold-BF64a38d8aeae4a.otf")
+    format("opentype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Articulate";
+  src: url("font/Fontspring-DEMO-articulatcf-normal-BF64a38d8b0cbaf.otf")
+    format("opentype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Articulate";
+  src: url("font/Fontspring-DEMO-articulatcf-normaloblique-BF64a38d8b23cba.otf")
+    format("opentype");
+  font-style: italic;
+  font-weight: normal;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  padding: 1rem 2rem;
+  overflow: auto;
+
+  font-family: "Articulate";
+  background-color: #e8e8e8;
+  font-weight: normal;
+}
+.bold {
+  font-weight: bold;
+}
+.name {
+  font-size: 10rem;
+  border-bottom: 1px solid black;
+  width: 65%;
+}
+.about .contact .list {
+  border-bottom: 1px solid black;
+  display: flex;
+
+  justify-content: space-between;
+}
+.about .contact .list .socials {
+  background-color: black;
+  color: white;
+
+  width: 20%;
+  text-align: center;
+  cursor: pointer;
+}
+.location .icon {
+  width: 28px;
+  transform: rotate(180deg);
+}
+
+#overflow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background: #252525;
+}
+@keyframes wipeout {
+  0% {
+    opacity: 1;
+    transform: translateY(1);
+  }
+  99% {
+    transform: translateY(-70rem);
+  }
+  100% {
+    transform: scaleY(0);
+  }
+}
+
+.wipeout-animation {
+  animation: wipeout 1s ease-out forwards;
+  transform-origin: bottom;
+}
+.about .text {
+  border-right: 1px solid black;
+}
+.location {
+  border-bottom: 1px solid black;
+}
+.education {
+  width: 80%;
+}
+.empty-width {
+  width: 16.666667%;
+}
+.italic {
+  font-style: italic;
+}
+.all-education {
+  border-left: 1px solid black;
+  padding-left: 1rem;
+}
+.work {
+  width: 80%;
+  margin: auto;
+  margin-top: 4rem;
+}
+.border-left {
+  border-left: 1px solid black;
+  padding-left: 1rem;
+}
+.border-bottom {
+  border-bottom: 1px solid black;
+  padding-bottom: 1rem;
+}
+.h-90 {
+  height: 90%;
+}
+@media (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  .name {
+    font-size: 3rem;
+    width: 100%;
+  }
+  .about {
+    flex-direction: column;
+    width: 100%;
+  }
+  .about .text {
+    border-right: none;
+    width: 100%;
+    font-size: 1rem;
+  }
+  .about .contact {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .location {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .location .icon {
+    width: 20px;
+  }
+  .education {
+    width: 100%;
+  }
+  .education .all-education {
+    border-left: none;
+    padding-left: 0;
+  }
+  .empty-width {
+    width: 0%;
+  }
+  .edu .date {
+    text-align: right;
+  }
+  .work {
+    width: 100%;
+  }
+  .car-title {
+    font-size: 2rem;
+  }
+  .work .logo {
+    width: 100%;
+  }
+  .work .desc {
+    width: 100%;
+  }
+  .work-title {
+    font-size: 3rem;
+  }
+  .work {
+    flex-direction: column;
+  }
+  .work-logo {
+    object-fit: contain;
+    height: 9rem;
+  }
+  .big-img-work {
+    height: 13rem;
+  }
+  .big-img-work-container {
+    width: 100%;
+  }
+  .talk-text {
+    font-size: 3rem;
+  }
+}
+
+/* Add more media queries for other screen sizes if needed */
