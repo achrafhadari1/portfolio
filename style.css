@@ -157,39 +157,42 @@ body {
   .empty-width {
     width: 0%;
   }
+  .talk-text {
+    font-size: 3rem !important;
+  }
   .edu .date {
-    text-align: right;
+    text-align: right !important;
   }
   .work {
-    width: 100%;
+    width: 100% !important;
   }
   .car-title {
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
   .work .logo {
-    width: 100%;
+    width: 100% !important;
   }
   .work .desc {
-    width: 100%;
+    width: 100% !important;
   }
   .work-title {
-    font-size: 3rem;
+    font-size: 3rem !important;
   }
   .work {
-    flex-direction: column;
+    flex-direction: column !important;
   }
   .work-logo {
-    object-fit: contain;
-    height: 9rem;
+    object-fit: contain !important;
+    height: 9rem !important;
   }
   .big-img-work {
-    height: 13rem;
+    height: 13rem !important;
   }
   .big-img-work-container {
-    width: 100%;
+    width: 100% !important;
   }
   .talk-text {
-    font-size: 3rem;
+    font-size: 3rem !important;
   }
 }
 
