@@ -241,4 +241,12 @@ body {
     font-size: 6rem;
   }
 }
+@media (max-width: 1500px) {
+  .work {
+    width: 100%;
+  }
+  .f-14 {
+    font-size: 14px;
+  }
+}
 /* Add more media queries for other screen sizes if needed */
