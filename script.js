@@ -36,4 +36,9 @@ document.addEventListener("DOMContentLoaded", function () {
       simulateScrollAndReset();
     }
   });
+  document.querySelector(".socials").addEventListener("click", function () {
+    // Scroll to the bottom of the page
+    document.querySelector(".talk-lets").scrollIntoView({ behavior: "smooth" });
+    console.log("clci");
+  });
 });
