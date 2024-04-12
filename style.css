@@ -223,7 +223,7 @@ body {
   .socials-bottom {
     display: flex !important;
     width: 100% !important;
-    gap: 1rem !important;
+    gap: 0.7rem !important;
   }
   .socials {
     padding-top: 2px;
@@ -231,6 +231,12 @@ body {
   }
   .social-link {
     gap: 0px !important;
+  }
+  .big-height-empty {
+    height: 20px !important;
+  }
+  .lutetia.border-bottom {
+    border-bottom: none !important;
   }
 }
 @media (max-width: 1700px) {
