@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Simulate scroll and reset after a delay
-  setTimeout(simulateScrollAndReset, 1000); // Adjust delay as needed
+  setTimeout(simulateScrollAndReset, 1000); 
 
   // Event listener for wheel scroll
   window.addEventListener("wheel", function () {
