@@ -1,11 +1,22 @@
 document.addEventListener("DOMContentLoaded", function () {
   const svgatorObject = document.getElementById("animated-svg");
-  const svgatorDocument =
-    svgatorObject.contentDocument || svgatorObject.contentWindow.document;
-  const svgatorElement = svgatorDocument.getElementById("e4VADjyvLY61");
-  if (svgatorElement && svgatorElement.svgatorPlayer) {
-    svgatorElement.svgatorPlayer.play();
-  }
+
+  // Ensure the SVG is fully loaded
+  svgatorObject.addEventListener("load", function () {
+    const svgatorDocument =
+      svgatorObject.contentDocument || svgatorObject.contentWindow.document;
+
+    if (!svgatorDocument) {
+      console.error("SVG document not found.");
+      return;
+    }
+
+    const svgatorElement = svgatorDocument.getElementById("e4VADjyvLY61");
+
+    if (svgatorElement && svgatorElement.svgatorPlayer) {
+      svgatorElement.svgatorPlayer.play();
+    }
+  });
 
   // Flag to track if animation and scroll reset has occurred
   let animationAndResetDone = false;
@@ -23,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Simulate scroll and reset after a delay
-  setTimeout(simulateScrollAndReset, 1000); 
+  setTimeout(simulateScrollAndReset, 1000);
 
   // Event listener for wheel scroll
   window.addEventListener("wheel", function () {
