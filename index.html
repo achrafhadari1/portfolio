@@ -2,715 +2,493 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Achraf Hadari - Web Developer</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="icon"
-      sizes="192x192"
-      href="favicon/android-chrome-192x192.png"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
     />
-    <link
-      rel="icon"
-      sizes="512x512"
-      href="favicon/android-chrome-512x512.png"
-    />
-    <link rel="icon" href="favicon/favicon.ico" />
-
-    <script src="script.js"></script>
   </head>
   <body>
-    <div id="overflow">
-      <object
-        id="animated-svg"
-        type="image/svg+xml"
-        data="Untitled.svg"
-      ></object>
-    </div>
-    <section>
-      <div class="name bold mb-10">
-        <div>Achraf Hadari</div>
-        <div>Web Developer</div>
-      </div>
-      <div class="about flex justify-between">
-        <div class="text w-2/4 text-3xl pr-5">
-          I'm deeply passionate about web development, drawing inspiration from
-          everyday interactions and the depths of overthinking. I thrive on
-          crafting applications that capture the nuances of human experience.
-          With each project, I strive to encapsulate the essence of daily life,
-          infusing it with inventive solutions and thoughtful design. Web
-          development isn't just a skill—it's a medium for expressing my
-          curiosity about the world and its boundless potential.
-        </div>
-        <div class="contact w-1/4 flex flex-col self-center">
-          <div class="list w-3/4">
-            <span>Email</span> <span>achrafhadari0@gmail.com</span>
-          </div>
-          <div class="list w-3/4">
-            <span>phone number</span> <span>+212 626032246</span>
-          </div>
-          <div class="list w-3/4">
-            <span>Contact me</span> <span class="socials">Socials</span>
-          </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">ACHRAF · HADARI</a>
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links">
+          <a href="#work">Work</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
         </div>
       </div>
-      <div class="location mt-5 pb-2">
-        <div class="bold">(Casablanca, Morocco)</div>
-        <div class="icon">
-          <svg
-            version="1.0"
-            id="Layer_1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewbox="0 0 64 64"
-            enable-background="new 0 0 64 64"
-            xml:space="preserve"
-            fill="#000000"
-          >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g
-              id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            ></g>
-            <g id="SVGRepo_iconCarrier">
-              <path
-                fill="#231F20"
-                d="M32,0C18.746,0,8,10.746,8,24c0,5.219,1.711,10.008,4.555,13.93c0.051,0.094,0.059,0.199,0.117,0.289l16,24 C29.414,63.332,30.664,64,32,64s2.586-0.668,3.328-1.781l16-24c0.059-0.09,0.066-0.195,0.117-0.289C54.289,34.008,56,29.219,56,24 C56,10.746,45.254,0,32,0z M32,32c-4.418,0-8-3.582-8-8s3.582-8,8-8s8,3.582,8,8S36.418,32,32,32z"
-              ></path>
-            </g>
-          </svg>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container grid">
+        <div class="hero-content">
+          <h1 class="fade-in">Web Developer</h1>
+          <p class="subtitle fade-in delay-1">
+            Crafting digital experiences that capture the nuances of human
+            interaction
+          </p>
+          <a href="#work" class="btn-primary fade-in delay-2">View Projects</a>
         </div>
-      </div>
-    </section>
-    <section class="mt-9 mb-9">
-      <div>
-        <div class="flex">
-          <div class="text-6xl font-bold car-title">Education / Career</div>
-          <div class="w-10 flex">
+        <div class="hero-image fade-in delay-3">
+          <div class="location">
+            <span>Casablanca, Morocco</span>
             <svg
-              viewbox="0 0 24 24"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g
-                id="SVGRepo_tracerCarrier"
+              <path
+                d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                stroke="currentColor"
+                stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-              ></g>
-              <g id="SVGRepo_iconCarrier">
-                <path
-                  d="M7 7L17 17M17 17V7M17 17H7"
-                  stroke="#000000"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-              </g>
+              />
+              <path
+                d="M12 22C16 18 20 14.4183 20 10C20 5.58172 16.4183 2 12 2C7.58172 2 4 5.58172 4 10C4 14.4183 8 18 12 22Z"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
             </svg>
           </div>
         </div>
-        <div class="education flex mt-5">
-          <div class="empty-width"></div>
-          <div class="flex flex-col gap-5 w-full m-auto all-education">
-            <div class="edu-3 edu flex justify-between">
-              <div>
-                <div class="title text-3xl">Red Nucleus</div>
-                <div class="italic">Web Developer</div>
-              </div>
-              <div class="date text-3xl italic bold">
-                /July 2022 - March 2024
-              </div>
-            </div>
-            <div class="edu-1 edu flex justify-between">
-              <div>
-                <div class="title text-3xl">
-                  IT LEARNING CAMPUS - FST SETTAT
-                </div>
-                <div class="italic">
-                  Professional University Degree in Application Design and
-                  Development Engineering
-                </div>
-              </div>
-              <div class="date text-3xl italic bold">/OCT 2022</div>
-            </div>
+      </div>
+    </section>
 
-            <div class="edu-2 edu flex justify-between">
-              <div>
-                <div class="title text-3xl">ISTA NTIC – SIDI MAAROUF</div>
-                <div class="italic">
-                  Specialized Technician in Computer Development
-                </div>
-              </div>
-              <div class="date text-3xl italic bold">/SEPT 2020</div>
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container grid">
+        <div class="section-heading">
+          <h2>About</h2>
+        </div>
+        <div class="about-content">
+          <p>
+            I'm deeply passionate about web development, drawing inspiration
+            from everyday interactions and the depths of overthinking. I thrive
+            on crafting applications that capture the nuances of human
+            experience. With each project, I strive to encapsulate the essence
+            of daily life, infusing it with inventive solutions and thoughtful
+            design. Web development isn't just a skill—it's a medium for
+            expressing my curiosity about the world and its boundless potential.
+          </p>
+
+          <div class="contact-info">
+            <div class="info-item">
+              <span class="label">Email</span>
+              <a href="mailto:achrafhadari0@gmail.com"
+                >achrafhadari0@gmail.com</a
+              >
+            </div>
+            <div class="info-item">
+              <span class="label">Phone</span>
+              <a href="tel:+212626032246">+212 626032246</a>
+            </div>
+            <div class="info-item">
+              <span class="label">Connect</span>
+              <a href="#contact" class="btn-text">Socials</a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="works mt-40">
-      <div class="work-title text-9xl bold text-center w-full">
-        Personal Work
-      </div>
-      <div class="work lutetia flex justify-between border-bottom pb-20">
-        <div class="logo w-1/5 flex flex-col justify-between">
-          <div class="border-left">LATR – Your Personal Reading Hub</div>
-          <img
-            class="w-full work-logo"
-            src="works/LATR/logo.svg"
-            alt="logo%20lutetia"
-            srcset=""
-          />
-          <div class="border-left">Web Dev</div>
+
+    <!-- Career Section -->
+    <section class="career">
+      <div class="container grid">
+        <div class="section-heading">
+          <h2>Education / Career</h2>
         </div>
-        <div class="w-6/12 big-img-work-container">
-          <img
-            class="w-full m-auto big-img-work"
-            src="works/LATR/1.png"
-            alt="header"
-          />
-        </div>
-        <div class="desc w-1/5 flex flex-col justify-between">
-          <p class="h-">
-            <span class="italic bold">LATR</span> started as a passion project
-            to help a friend who struggled with keeping track of online
-            articles. He often bookmarked articles, only to forget about them
-            later, never finding the time to read or revisit them. I wanted to
-            create something intuitive, something that didn’t just store links
-            but made reading an intentional habit.
-          </p>
-          <div class="flex justify-end gap-4">
-            <a
-              href="https://www.behance.net/gallery/154962897/Lutetia"
-              class="flex border-bottom"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><span>View Design</span
-              ><span class="w-5 pl-1 flex"
-                ><svg
-                  viewbox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="#000000"
-                >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g
-                    id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></g>
-                  <g id="SVGRepo_iconCarrier">
-                    <title></title>
-                    <g id="Complete">
-                      <g id="arrow-up-right">
-                        <g>
-                          <polyline
-                            data-name="Right"
-                            fill="none"
-                            id="Right-2"
-                            points="18.7 12.4 18.7 5.3 11.6 5.3"
-                            stroke="#000000"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                          ></polyline>
-                          <line
-                            fill="none"
-                            stroke="#000000"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            x1="5.3"
-                            x2="17.1"
-                            y1="18.7"
-                            y2="6.9"
-                          ></line>
-                        </g>
-                      </g>
-                    </g>
-                  </g></svg></span
-            ></a>
-            <a
-              href="https://lutetia.netlify.app/"
-              class="flex border-bottom"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><span>Live Preview</span
-              ><span class="w-5 pl-1 flex"
-                ><svg
-                  viewbox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="#000000"
-                >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g
-                    id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></g>
-                  <g id="SVGRepo_iconCarrier">
-                    <title></title>
-                    <g id="Complete">
-                      <g id="arrow-up-right">
-                        <g>
-                          <polyline
-                            data-name="Right"
-                            fill="none"
-                            id="Right-2"
-                            points="18.7 12.4 18.7 5.3 11.6 5.3"
-                            stroke="#000000"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                          ></polyline>
-                          <line
-                            fill="none"
-                            stroke="#000000"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            x1="5.3"
-                            x2="17.1"
-                            y1="18.7"
-                            y2="6.9"
-                          ></line>
-                        </g>
-                      </g>
-                    </g>
-                  </g></svg></span
-            ></a>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Red Nucleus</h3>
+              <p class="role">Web Developer</p>
+              <p class="period">July 2022 - March 2024</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>IT LEARNING CAMPUS - FST SETTAT</h3>
+              <p class="role">
+                Professional University Degree in Application Design and
+                Development Engineering
+              </p>
+              <p class="period">October 2022 - October 2023</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>ISTA NTIC – SIDI MAAROUF</h3>
+              <p class="role">Specialized Technician in Computer Development</p>
+              <p class="period">September 2020 - July 2022</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="work lutetia flex justify-between border-bottom pb-20">
-        <div class="logo w-1/5 flex flex-col justify-between">
-          <div class="border-left">
-            "Reimagining a Classic: The Iconic Cinema Theatre Lutetia"
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="work">
+      <div class="container">
+        <div class="section-heading centered">
+          <h2>Personal Work</h2>
+        </div>
+
+        <!-- LATR Project -->
+        <div class="work-item">
+          <div class="work-left">
+            <div class="work-category">LATR – Your Personal Reading Hub</div>
+            <div class="work-logo">
+              <img
+                class="work_logo_ltr"
+                src="/works/LATR/logo.svg"
+                alt="LATR logo"
+              />
+            </div>
+            <div class="work-category">Web Dev</div>
           </div>
-          <img
-            class="w-full work-logo"
-            src="works/lutetia/logo%20lutetia.png"
-            alt="logo%20lutetia"
-            srcset=""
-          />
-          <div class="border-left">Web / Social Design</div>
-        </div>
-        <div class="w-6/12 big-img-work-container">
-          <img
-            class="w-full m-auto big-img-work"
-            src="works/lutetia/landing-lut.png"
-            alt="header"
-          />
-        </div>
-        <div class="desc w-1/5 flex flex-col justify-between">
-          <p class="h-">
-            <span class="italic bold">Cinema theathre Lutetia</span> The Cinema
-            Theatre Lutetia stands as a 1950s landmark at the heart of my city,
-            blending nostalgia with contemporary art to offer a delightful
-            viewing experience with each visit. Amidst the challenges of
-            adapting to modern ticketing technologies, I found inspiration to
-            embark on a project aimed at revitalizing this cultural gem.
-            Currently, I am in the process of developing this concept into a web
-            application.
-          </p>
-          <div class="flex justify-end gap-4">
-            <a
-              href="https://www.behance.net/gallery/154962897/Lutetia"
-              class="flex border-bottom"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><span>View Design</span
-              ><span class="w-5 pl-1 flex"
-                ><svg
-                  viewbox="0 0 24 24"
+
+          <div class="work-center">
+            <a href="project-latr.html" class="work-image-link">
+              <img src="/works/LATR/1.png" alt="LATR Project Screenshot" />
+            </a>
+          </div>
+
+          <div class="work-right">
+            <p class="work-description">
+              <span class="emphasis">LATR</span> started as a passion project to
+              help a friend who struggled with keeping track of online articles.
+              He often bookmarked articles, only to forget about them later,
+              never finding the time to read or revisit them. I wanted to create
+              something intuitive, something that didn't just store links but
+              made reading an intentional habit.
+            </p>
+            <div class="work-links">
+              <a
+                href="https://www.behance.net/gallery/154962897/Lutetia"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="link-with-arrow"
+              >
+                <span>View Design</span>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="#000000"
                 >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g
-                    id="SVGRepo_tracerCarrier"
+                  <path
+                    d="M7 17L17 7M17 7H7M17 7V17"
+                    stroke="currentColor"
+                    stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                  ></g>
-                  <g id="SVGRepo_iconCarrier">
-                    <title></title>
-                    <g id="Complete">
-                      <g id="arrow-up-right">
-                        <g>
-                          <polyline
-                            data-name="Right"
-                            fill="none"
-                            id="Right-2"
-                            points="18.7 12.4 18.7 5.3 11.6 5.3"
-                            stroke="#000000"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                          ></polyline>
-                          <line
-                            fill="none"
-                            stroke="#000000"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            x1="5.3"
-                            x2="17.1"
-                            y1="18.7"
-                            y2="6.9"
-                          ></line>
-                        </g>
-                      </g>
-                    </g>
-                  </g></svg></span
-            ></a>
-            <a
-              href="https://lutetia.netlify.app/"
-              class="flex border-bottom"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><span>Live Preview</span
-              ><span class="w-5 pl-1 flex"
-                ><svg
-                  viewbox="0 0 24 24"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://lutetia.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="link-with-arrow"
+              >
+                <span>Live Preview</span>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="#000000"
                 >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g
-                    id="SVGRepo_tracerCarrier"
+                  <path
+                    d="M7 17L17 7M17 7H7M17 7V17"
+                    stroke="currentColor"
+                    stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                  ></g>
-                  <g id="SVGRepo_iconCarrier">
-                    <title></title>
-                    <g id="Complete">
-                      <g id="arrow-up-right">
-                        <g>
-                          <polyline
-                            data-name="Right"
-                            fill="none"
-                            id="Right-2"
-                            points="18.7 12.4 18.7 5.3 11.6 5.3"
-                            stroke="#000000"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                          ></polyline>
-                          <line
-                            fill="none"
-                            stroke="#000000"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            x1="5.3"
-                            x2="17.1"
-                            y1="18.7"
-                            y2="6.9"
-                          ></line>
-                        </g>
-                      </g>
-                    </g>
-                  </g></svg></span
-            ></a>
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="work biblioPod pt-4 flex justify-between pb-20">
-        <div class="logo w-1/5">
-          <div class="border-left">BiblioPod - E-Reader</div>
-          <img
-            class="w-full h-90 object-contain"
-            src="works/BiblioPod/logo-long.png"
-            alt="logo-long"
-            srcset=""
-          />
-          <div class="border-left">Web Dev</div>
+
+        <!-- Lutetia Project -->
+        <div class="work-item">
+          <div class="work-left">
+            <div class="work-category">
+              "Reimagining a Classic: The Iconic Cinema Theatre Lutetia"
+            </div>
+            <div class="work-logo">
+              <img
+                class="width-40"
+                src="/works/lutetia/logo lutetia.png"
+                alt="Lutetia logo"
+              />
+            </div>
+            <div class="work-category">Web / Social Design</div>
+          </div>
+
+          <div class="work-center">
+            <a href="project-lutetia.html" class="work-image-link">
+              <img
+                src="/works/lutetia/landing-lut.png"
+                alt="Lutetia Project Screenshot"
+              />
+            </a>
+          </div>
+
+          <div class="work-right">
+            <p class="work-description">
+              <span class="emphasis">Cinema theathre Lutetia</span> stands as a
+              1950s landmark at the heart of my city, blending nostalgia with
+              contemporary art to offer a delightful viewing experience with
+              each visit. Amidst the challenges of adapting to modern ticketing
+              technologies, I found inspiration to embark on a project aimed at
+              revitalizing this cultural gem. Currently, I am in the process of
+              developing this concept into a web application.
+            </p>
+            <div class="work-links">
+              <a
+                href="https://www.behance.net/gallery/154962897/Lutetia"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="link-with-arrow"
+              >
+                <span>View Design</span>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 17L17 7M17 7H7M17 7V17"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://lutetia.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="link-with-arrow"
+              >
+                <span>Live Preview</span>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 17L17 7M17 7H7M17 7V17"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="w-6/12 big-img-work-container">
-          <img
-            class="w-full m-auto big-img-work"
-            src="works/BiblioPod/landing-bp.png"
-            alt="screencapture-localhost-5173-2024-03-29-15_02_11"
-          />
-        </div>
-        <div class="desc w-1/5 flex flex-col justify-between">
-          <p class="h-">
-            While on break at my job, I struggled to find a simple way to read
-            eBooks without losing my notes or progress. Most eBook readers
-            required installations, which wasn’t an option on my work computer.
-            I searched for a browser-based solution but found nothing that truly
-            met my needs. So, <span class="italic bold">I built one</span>.
-          </p>
-          <div class="flex justify-around f-14">
-            <div class="flex border-bottom">
+
+        <!-- BiblioPod Project -->
+        <div class="work-item">
+          <div class="work-left">
+            <div class="work-category">BiblioPod - E-Reader</div>
+            <div class="work-logo">
+              <img src="/works/BiblioPod/logo-long.png" alt="BiblioPod logo" />
+            </div>
+            <div class="work-category">Web Dev</div>
+          </div>
+
+          <div class="work-center">
+            <a href="project-bibliopod.html" class="work-image-link">
+              <img
+                src="/works/BiblioPod/landing-bp.png"
+                alt="BiblioPod Project Screenshot"
+              />
+            </a>
+          </div>
+
+          <div class="work-right">
+            <p class="work-description">
+              While on break at my job, I struggled to find a simple way to read
+              eBooks without losing my notes or progress. Most eBook readers
+              required installations, which wasn't an option on my work
+              computer. I searched for a browser-based solution but found
+              nothing that truly met my needs. So,
+              <span class="emphasis">I built one</span>.
+            </p>
+            <div class="work-links">
               <a
                 href="https://github.com/achrafhadari1/BiblioPod_V2"
                 target="_blank"
                 rel="noopener noreferrer"
-                ><span>View Source Code</span></a
-              ><span class="w-5 pl-1 flex"
-                ><svg
-                  viewbox="0 0 24 24"
+                class="link-with-arrow"
+              >
+                <span>View Source Code</span>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="#000000"
                 >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g
-                    id="SVGRepo_tracerCarrier"
+                  <path
+                    d="M7 17L17 7M17 7H7M17 7V17"
+                    stroke="currentColor"
+                    stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                  ></g>
-                  <g id="SVGRepo_iconCarrier">
-                    <title></title>
-                    <g id="Complete">
-                      <g id="arrow-up-right">
-                        <g>
-                          <polyline
-                            data-name="Right"
-                            fill="none"
-                            id="Right-2"
-                            points="18.7 12.4 18.7 5.3 11.6 5.3"
-                            stroke="#000000"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                          ></polyline>
-                          <line
-                            fill="none"
-                            stroke="#000000"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            x1="5.3"
-                            x2="17.1"
-                            y1="18.7"
-                            y2="6.9"
-                          ></line>
-                        </g>
-                      </g>
-                    </g>
-                  </g></svg
-              ></span>
-            </div>
-            <div class="flex border-bottom">
+                  />
+                </svg>
+              </a>
               <a
                 href="https://www.behance.net/gallery/195159331/Biblio-Pod"
                 target="_blank"
-                ><span>View Design</span></a
+                rel="noopener noreferrer"
+                class="link-with-arrow"
               >
-              <span class="w-5 pl-1 flex"
-                ><svg
-                  viewbox="0 0 24 24"
+                <span>View Design</span>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="#000000"
                 >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g
-                    id="SVGRepo_tracerCarrier"
+                  <path
+                    d="M7 17L17 7M17 7H7M17 7V17"
+                    stroke="currentColor"
+                    stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                  ></g>
-                  <g id="SVGRepo_iconCarrier">
-                    <title></title>
-                    <g id="Complete">
-                      <g id="arrow-up-right">
-                        <g>
-                          <polyline
-                            data-name="Right"
-                            fill="none"
-                            id="Right-2"
-                            points="18.7 12.4 18.7 5.3 11.6 5.3"
-                            stroke="#000000"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                          ></polyline>
-                          <line
-                            fill="none"
-                            stroke="#000000"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            x1="5.3"
-                            x2="17.1"
-                            y1="18.7"
-                            y2="6.9"
-                          ></line>
-                        </g>
-                      </g>
-                    </g>
-                  </g></svg
-              ></span>
+                  />
+                </svg>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="talk-lets">
-      <div class="h-64 flex justify-around big-height-empty"></div>
-      <div class="flex flex-col gap-10">
-        <div>You have a project in mind?</div>
-        <div class="flex border-bottom justify-between text-9xl bold talk-text">
-          <span class="self-end flex bib-talk">LET'S TALK</span>
-          <div class="socials-bottom">
-            <a
-              href="https://www.linkedin.com/in/achrafhadari/"
-              target="_blank"
-              rel="noopener noreferrer"
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container grid">
+        <div class="contact-heading">
+          <p>You have a project in mind?</p>
+          <h2>LET'S TALK</h2>
+        </div>
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/achrafhadari/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-link"
+          >
+            <span>LinkedIn</span>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <div class="flex gap-4 social-link">
-                <span class="col text-3xl flex items-center">Linkedin</span
-                ><span class="w-24 pl-1 flex"
-                  ><svg
-                    viewbox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="#000000"
-                  >
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g
-                      id="SVGRepo_tracerCarrier"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></g>
-                    <g id="SVGRepo_iconCarrier">
-                      <title></title>
-                      <g id="Complete">
-                        <g id="arrow-up-right">
-                          <g>
-                            <polyline
-                              data-name="Right"
-                              fill="none"
-                              id="Right-2"
-                              points="18.7 12.4 18.7 5.3 11.6 5.3"
-                              stroke="#000000"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                            ></polyline>
-                            <line
-                              fill="none"
-                              stroke="#000000"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              x1="5.3"
-                              x2="17.1"
-                              y1="18.7"
-                              y2="6.9"
-                            ></line>
-                          </g>
-                        </g>
-                      </g>
-                    </g></svg
-                ></span></div
-            ></a>
-            <a
-              href="https://www.behance.net/achrafser"
-              target="_blank"
-              rel="noopener noreferrer"
+              <path
+                d="M7 17L17 7M17 7H7M17 7V17"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://www.behance.net/achrafser"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-link"
+          >
+            <span>Behance</span>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <div class="flex gap-4 social-link">
-                <span class="col text-3xl flex items-center">Behance</span
-                ><span class="w-24 pl-1 flex"
-                  ><svg
-                    viewbox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="#000000"
-                  >
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g
-                      id="SVGRepo_tracerCarrier"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></g>
-                    <g id="SVGRepo_iconCarrier">
-                      <title></title>
-                      <g id="Complete">
-                        <g id="arrow-up-right">
-                          <g>
-                            <polyline
-                              data-name="Right"
-                              fill="none"
-                              id="Right-2"
-                              points="18.7 12.4 18.7 5.3 11.6 5.3"
-                              stroke="#000000"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                            ></polyline>
-                            <line
-                              fill="none"
-                              stroke="#000000"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              x1="5.3"
-                              x2="17.1"
-                              y1="18.7"
-                              y2="6.9"
-                            ></line>
-                          </g>
-                        </g>
-                      </g>
-                    </g></svg
-                ></span></div
-            ></a>
-            <a
-              href="https://github.com/achrafhadari1"
-              target="_blank"
-              rel="noopener noreferrer"
+              <path
+                d="M7 17L17 7M17 7H7M17 7V17"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://github.com/achrafhadari1"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-link"
+          >
+            <span>GitHub</span>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <div class="flex gap-4 social-link justify-between">
-                <span class="col text-3xl flex items-center">Github</span
-                ><span class="w-24 pl-1 flex f-auto"
-                  ><svg
-                    viewbox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="#000000"
-                  >
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g
-                      id="SVGRepo_tracerCarrier"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></g>
-                    <g id="SVGRepo_iconCarrier">
-                      <title></title>
-                      <g id="Complete">
-                        <g id="arrow-up-right">
-                          <g>
-                            <polyline
-                              data-name="Right"
-                              fill="none"
-                              id="Right-2"
-                              points="18.7 12.4 18.7 5.3 11.6 5.3"
-                              stroke="#000000"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                            ></polyline>
-                            <line
-                              fill="none"
-                              stroke="#000000"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              x1="5.3"
-                              x2="17.1"
-                              y1="18.7"
-                              y2="6.9"
-                            ></line>
-                          </g>
-                        </g>
-                      </g>
-                    </g></svg
-                ></span></div
-            ></a>
-          </div>
+              <path
+                d="M7 17L17 7M17 7H7M17 7V17"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
         </div>
       </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2024 Achraf Hadari. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

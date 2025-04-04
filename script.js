@@ -1,55 +1,81 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const svgatorObject = document.getElementById("animated-svg");
+document.addEventListener("DOMContentLoaded", () => {
+  // Mobile menu toggle
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
 
-  // Ensure the SVG is fully loaded
-  svgatorObject.addEventListener("load", function () {
-    const svgatorDocument =
-      svgatorObject.contentDocument || svgatorObject.contentWindow.document;
+  if (menuToggle) {
+    menuToggle.addEventListener("click", function () {
+      navLinks.classList.toggle("active");
+      document.body.classList.toggle("menu-open");
 
-    if (!svgatorDocument) {
-      console.error("SVG document not found.");
-      return;
-    }
-
-    const svgatorElement = svgatorDocument.getElementById("e4VADjyvLY61");
-
-    if (svgatorElement && svgatorElement.svgatorPlayer) {
-      svgatorElement.svgatorPlayer.play();
-    }
-  });
-
-  // Flag to track if animation and scroll reset has occurred
-  let animationAndResetDone = false;
-
-  // Function to simulate scroll and trigger animation and reset
-  function simulateScrollAndReset() {
-    const overlay = document.getElementById("overflow");
-    const body = document.body;
-    body.style.overflow = "visible";
-    overlay.classList.add("wipeout-animation");
-    if (!animationAndResetDone) {
-      window.scrollTo(0, 0);
-    }
-    animationAndResetDone = true;
+      // Transform hamburger to X
+      this.classList.toggle("active");
+    });
   }
 
-  // Simulate scroll and reset after a delay
-  setTimeout(simulateScrollAndReset, 1000);
-
-  // Event listener for wheel scroll
-  window.addEventListener("wheel", function () {
-    simulateScrollAndReset();
-  });
-
-  // Event listener for arrow key scroll
-  window.addEventListener("keydown", function (event) {
-    if (event.key === "ArrowUp" || event.key === "ArrowDown") {
-      simulateScrollAndReset();
+  // Close menu when clicking outside
+  document.addEventListener("click", (event) => {
+    if (
+      navLinks &&
+      navLinks.classList.contains("active") &&
+      !event.target.closest(".nav-links") &&
+      !event.target.closest(".menu-toggle")
+    ) {
+      navLinks.classList.remove("active");
+      document.body.classList.remove("menu-open");
+      if (menuToggle) {
+        menuToggle.classList.remove("active");
+      }
     }
   });
-  document.querySelector(".socials").addEventListener("click", function () {
-    // Scroll to the bottom of the page
-    document.querySelector(".talk-lets").scrollIntoView({ behavior: "smooth" });
-    console.log("clci");
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute("href");
+      if (targetId === "#") return;
+
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        // Close mobile menu if open
+        if (navLinks && navLinks.classList.contains("active")) {
+          navLinks.classList.remove("active");
+          document.body.classList.remove("menu-open");
+          if (menuToggle) {
+            menuToggle.classList.remove("active");
+          }
+        }
+
+        // Scroll to target
+        window.scrollTo({
+          top: targetElement.offsetTop - 80, // Adjust for header height
+          behavior: "smooth",
+        });
+      }
+    });
   });
+
+  // Reveal animations on scroll
+  const revealElements = document.querySelectorAll(
+    ".timeline-item, .project-card, .process-step, .meta-item"
+  );
+
+  const revealOnScroll = () => {
+    revealElements.forEach((element) => {
+      const elementTop = element.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (elementTop < windowHeight - 100) {
+        element.classList.add("fade-in");
+      }
+    });
+  };
+
+  // Initial check
+  revealOnScroll();
+
+  // Check on scroll
+  window.addEventListener("scroll", revealOnScroll);
 });
