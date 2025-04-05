@@ -92,10 +92,9 @@
             <h4>Problem Definition</h4>
             <p>
               I identified several key requirements: the reader needed to work
-              entirely in the browser without installations, support multiple
-              ebook formats, save reading progress automatically, and provide
-              annotation capabilities that wouldn't be lost when closing the
-              browser.
+              entirely in the browser without installations, save reading
+              progress automatically, and provide annotation capabilities that
+              wouldn't be lost when closing the browser.
             </p>
           </div>
 
@@ -109,11 +108,13 @@
           <div class="process-step">
             <h4>Development Challenges</h4>
             <p>
-              The biggest technical challenges were implementing a reliable
-              parsing system for different ebook formats and creating a
-              persistent storage solution that would work across sessions. I
-              used the browser's localStorage and IndexedDB to store user data
-              and reading progress.
+              The biggest technical challenges were implementing and combining
+              API and Parsing system for fetching ebook data and reading the
+              ebooks, also creating a persistent storage solution that would
+              work across sessions. I used the browser's localStorage as a
+              temporary measure to save different Settings such as dark mode and
+              font size to store user data and reading progress, but as a
+              permanent storage option I used Laravel.
             </p>
           </div>
 
